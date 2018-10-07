@@ -2,12 +2,12 @@ package _00_Dynamic_Integer_Array;
 
 public class DynamicIntegerArray {
 	//1. Create a private int array. Don't initialize it.
-
+private int [] thing;
 	
 	public DynamicIntegerArray() {
 		//2. Initialize the int array to have 0 elements. 
 		//   This will prevent a null pointer exception
-	
+	thing=new int[0];
 	}
 	
 	//3. Complete the steps in the add method
