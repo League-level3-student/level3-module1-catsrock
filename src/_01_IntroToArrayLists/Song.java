@@ -12,7 +12,9 @@ public class Song {
 	private String songAddress;
 	private AdvancedPlayer mp3Player;
 	private InputStream songStream;
-
+public static void main(String[] args) {
+	new Song("demo.mp3").play();
+}
 	/**
 	 * Songs can be constructed from files on your computer or Internet addresses. *
 	 * Examples: <code>
