@@ -14,6 +14,7 @@ public class Song {
 	private InputStream songStream;
 public static void main(String[] args) {
 	new Song("demo.mp3").play();
+	
 }
 	/**
 	 * Songs can be constructed from files on your computer or Internet addresses. *

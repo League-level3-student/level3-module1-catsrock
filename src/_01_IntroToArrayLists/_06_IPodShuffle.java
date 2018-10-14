@@ -1,12 +1,20 @@
 package _01_IntroToArrayLists;
 
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.util.ArrayList;
 import java.util.Random;
+
+import javax.swing.JButton;
 
 
 //Copyright The League of Amazing Programmers, 2015
 
-public class _06_IPodShuffle{
+public class _06_IPodShuffle implements ActionListener{
+	ArrayList <Song> songs=new ArrayList<Song>();
+	JButton button=new JButton("Surprise Me!");
+	Random r=new Random();
+	int order=r.nextInt(songs.size());
 	public _06_IPodShuffle() {
 		// 1. Use the Song class the play the demo.mp3 file.
 				
@@ -24,5 +32,15 @@ public class _06_IPodShuffle{
 	public static void main(String[] args) {
 		new _06_IPodShuffle();
 		
+	}
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		// TODO Auto-generated method stub
+		if (e.getSource()==button) {
+			for (int i = 0; i < songs.size(); i++) {
+				songs.get(order);
+			}
+		}
 	}
 }
