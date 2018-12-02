@@ -50,7 +50,6 @@ public class HangMan implements KeyListener {
 	public void keyTyped(KeyEvent e) {
 		System.out.println("TEST");
 		c = "" + (char) e.getKeyCode();
-		System.out.println(c);
 		if (Character.isLetter(c.charAt(0))) {
 			// label.setText(label.getText()+c);
 			ArrayList<Integer> indicesFound = new ArrayList<Integer>();
@@ -76,7 +75,6 @@ public class HangMan implements KeyListener {
 			System.out.println(getText);
 			System.out.println(newText);
 			label.setText(newText);
-			//frame.pack();
 		}
 	}
 
